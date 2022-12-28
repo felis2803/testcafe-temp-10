@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    Hello, TestCafe!
+    <script>
+        fetch('/long-loading-page?delay=1000')
+            .then(() => document.body.innerText = 'AJAX request completed successfully');
+    </script>
+</body>
+</html>
